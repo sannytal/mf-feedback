@@ -1,0 +1,274 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-feedback-page {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 20px;
+}
+
+.app-feedback-page #title {
+  text-align: center;
+}
+
+.app-feedback-page #survey-form {
+  margin-left: 4em;
+  margin-right: 4em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  border-radius: 3%;
+  background-color: #c7c7c7;
+  color: black;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+}
+
+.app-feedback-page #description {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.app-feedback-page #name-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+}
+
+.app-feedback-page #name {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 32em;
+  height: 2em;
+  align-self: center;
+}
+
+.app-feedback-page #email-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+}
+
+.app-feedback-page #email {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 32em;
+  height: 2em;
+  align-self: center;
+}
+
+.app-feedback-page #number-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-self: center;
+}
+
+.app-feedback-page #number {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 32em;
+  height: 2em;
+  align-self: center;
+}
+
+.app-feedback-page #gender-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  align-self: center;
+}
+
+.app-feedback-page #gender-button {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-size: auto;
+  align-self: center;
+}
+
+.app-feedback-page #status-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  align-self: center;
+}
+
+.app-feedback-page #dropdown {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  width: 32em;
+  height: 2em;
+  align-self: center;
+}
+
+.app-feedback-page #use-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  align-self: center;
+}
+
+.app-feedback-page #use-input {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  align-self: center;
+}
+
+.app-feedback-page #comment-label {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  align-self: center;
+}
+
+.app-feedback-page comment-box {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  align-self: center;
+}
+
+.app-feedback-page #submit {
+  margin-top: 1em;
+  background-color: #90afc5;
+  font-size: 1.75em;
+  font-family: 'Cherry Swash', Arial;
+  font-weight: bolder;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.app-feedback-page textarea {
+  font-family: 'Cherry Swash', Arial;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+/* iPad */
+@media (max-width: 770px) and (max-height: 1030px) {
+  .app-feedback-page #title {
+    font-size: 3em;
+  }
+
+  .app-feedback-page #description {
+    padding-top: 1.4em;
+    font-size: 2em;
+  }
+
+  .app-feedback-page #survey-form {
+    font-size: 1.3em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .app-feedback-page #name,
+  #email,
+  #number {
+    width: 10em;
+    height: 1em;
+    margin-top: 2em;
+    font-size: 0.7em;
+  }
+
+  .app-feedback-page #status {
+    width: 10em;
+    height: 1em;
+    height: 1.2em;
+    font-size: 1em;
+  }
+
+  .app-feedback-page #submit {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  .app-feedback-page #comment-box {
+    max-width: 9em;
+    margin-top: 2em;
+  }
+}
+
+/* Most Mobile Devices*/
+@media (max-width: 420px) and (max-height: 812px) {
+  .app-feedback-page #title {
+    font-size: 1.5em;
+  }
+
+  .app-feedback-page #description {
+    padding-top: 1.4em;
+    font-size: 1em;
+  }
+
+  .app-feedback-page #survey-form {
+    font-size: 0.65em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .app-feedback-page #name,
+  #email,
+  #number {
+    width: 10em;
+    height: 1em;
+    margin-top: 2em;
+  }
+
+  .app-feedback-page #dropdown {
+    width: 10em;
+    height: 1em;
+    height: 2em;
+  }
+
+  .app-feedback-page #submit {
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
+
+  .app-feedback-page #comment-box {
+    max-width: 9em;
+    margin-top: 2em;
+  }
+}
+.style-1 {
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  bottom: 0;
+  position: absolute;
+  font-size: 16px;
+}
+.style-1 a {
+  margin-left: 1rem;
+}
